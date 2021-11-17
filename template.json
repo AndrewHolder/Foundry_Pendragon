@@ -1,4 +1,22 @@
 {
-    "Actors":{},
-    "Items":{}
+    "Actor":{
+
+    },
+    "Item":{
+        "types":[
+            "weapon",
+            "holding"
+        ],
+        "templates":{
+            "itemDescription": {
+                "description":""
+            }
+        },
+        "weapon":{
+        "templates":["itemDescription"]
+        },
+        "holding":{
+            "templates":["itemDescription"]
+        }
+    }
 }

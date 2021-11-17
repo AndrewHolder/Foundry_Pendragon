@@ -7,15 +7,20 @@
     "minimumCoreVersion": "0.8.9",
     "compatibleCoreVersion": "0.8.9",
     "esmodules" :[
-        "PDragon.js"
+        "Pendragon.js"
     ],
     "styles": [
-        "PDragon.css"
+        "Pendragon.css"
     ],
     "packs": [
         
     ],
     "languages": [
+        {
+            "lang": "en",
+            "name": "English",
+            "path": "lang/en.json"
+        }
 
     ],
     "gridDistance": 5,
