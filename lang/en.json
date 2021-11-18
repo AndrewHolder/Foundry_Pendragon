@@ -1,7 +1,17 @@
 {
-    "Pendragon" : {
-        "weapon": {
-            "damage": "damage"
+    "pendragon" : {
+        "skill": {
+            "none": "",
+            "firstaid": "First Aid",
+            "battle": "Battle",
+            "horsemanship": "Horsemanship"
+        },
+        "mortal": {
+            "age": "Age"
+        },
+        "labels": {
+            "description": "Description",
+            "bio": "Bio"
         }
     }
 }

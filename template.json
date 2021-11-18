@@ -1,22 +1,45 @@
 {
     "Actor":{
-
+        "types":[
+            "knight",
+            "woman knight",
+            "NPC"
+        ],
+        "templates:": {
+            "actorBase": {
+                "name": "",
+                "age": "",
+                "homeland":"",
+                "culture": "",
+                "religion": "",
+                "lord": "",
+                "currentClass": "",
+                "currentHome": ""
+            }
+        },
+        "knight":{
+            "templates":["actorBase"]
+        }
     },
     "Item":{
         "types":[
-            "weapon",
-            "holding"
+            "squire"
         ],
         "templates":{
-            "itemDescription": {
-                "description":""
+            "mortalBase": {
+                "bio": "",
+                "name": "",
+                "age": 0
             }
         },
-        "weapon":{
-        "templates":["itemDescription"]
-        },
-        "holding":{
-            "templates":["itemDescription"]
+        "squire":{
+            "templates":["mortalBase"],
+            "firstaid": 0,
+            "firstaidChecked": false,
+            "battle": 0,
+            "battleChecked": false,
+            "horsemanship": 0,
+            "horsemanshipChecked": false
         }
     }
 }

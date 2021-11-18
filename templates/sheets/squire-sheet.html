@@ -1,0 +1,22 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <header class="sheet-header">
+        <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64"/>
+        <h1><input name="name" type="text" value="{{item.name}}" placeholder="{{ localize 'Name' }}"/></h1>
+    </header>
+        <div>
+            {{localize "pendragon.mortal.age"}} : <input name="data.age" type="text" value="{{data.age}}" data-dtype="Number" />
+            <br>
+            {{localize "pendragon.skill.firstaid"}} : <input name ="data.firstaidChecked" type="checkbox" {{checked data.firstaidChecked}} />
+            <input name="data.firstaid" type="text" value="{{data.firstaid}}" data-dtype="Number" />
+            <br>
+            {{localize "pendragon.skill.battle"}} : <input name ="data.battleChecked" type="checkbox" {{checked data.battleChecked}} />
+            <input name="data.battle" type="text" value="{{data.battle}}" data-dtype="Number" />
+            <br>
+            {{localize "pendragon.skill.horsemanship"}} : <input name ="data.horsemanshipChecked" type="checkbox" {{checked data.horsemanshipChecked}} />
+            <input name="data.horsemanship" type="text" value="{{data.horsemanship}}" data-dtype="Number" />
+            <br><br>
+            {{localize "pendragon.labels.bio"}} :
+            <br>
+            <textarea name="data.bio">{{data.bio}}</textarea>
+        </div>
+</form>

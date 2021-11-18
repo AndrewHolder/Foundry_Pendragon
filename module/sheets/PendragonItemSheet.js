@@ -5,10 +5,16 @@ export default class PendragonItemSheet extends ItemSheet {
     }
 
     getData() {
-        const data = super.getData();
+        const baseData = super.getData();
 
-        data.config = CONFIG.pendragon;
+        let sheetData = {
+            owner: this.item.isOwner,
+            editable: this.isEditable,
+            item: baseData.item,
+            data: baseData.item.data.data,
+            config: CONFIG.pendragon
+        }
 
-        return data;
+        return sheetData;
     }
 }

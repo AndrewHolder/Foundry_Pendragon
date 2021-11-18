@@ -2,7 +2,8 @@ import  { pendragon } from "./module/config.js"
 import PendragonItemSheet from "./module/sheets/PendragonItemSheet.js";
 
 Hooks.once("init", function() {
-    console.log("PDragon | Initializing Pendragon system");
+    
+    console.log("Pendragon 5e | Initializing Pendragon system");
 
     CONFIG.pendragon = pendragon;
 
