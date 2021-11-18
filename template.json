@@ -1,8 +1,8 @@
 {
     "Actor":{
         "types":[
-            "knight",
-            "woman knight",
+            "Knight",
+            "Woman knight",
             "NPC"
         ],
         "templates:": {
@@ -15,31 +15,141 @@
                 "lord": "",
                 "currentClass": "",
                 "currentHome": ""
+            },
+            "skillBase": {
+                "awareness" :{
+                    "value" :0,
+                    "isChecked": false
+                },
+                "boating" :{
+                    "value" :0,
+                    "isChecked": false
+                },
+                "compose" :{
+                    "value" :0,
+                    "isChecked": false
+                },
+                "courtesy" :{
+                    "value" :0,
+                    "isChecked": false
+                },
+                "dancing" :{
+                    "value" :0,
+                    "isChecked": false
+                },
+                "faerieLore" :{
+                    "value" :0,
+                    "isChecked": false
+                },
+                "firstAid" :{
+                    "value" :0,
+                    "isChecked": false
+                },
+                "flirting" :{
+                    "value" :0,
+                    "isChecked": false
+                },
+                "folklore" :{
+                    "value" :0,
+                    "isChecked": false
+                },
+                "gaming" :{
+                    "value" :0,
+                    "isChecked": false
+                },
+                "hearldry" :{
+                    "value" :0,
+                    "isChecked": false
+                },
+                "hunting" :{
+                    "value" :0,
+                    "isChecked": false
+                },
+                "intrigue" :{
+                    "value" :0,
+                    "isChecked": false
+                },
+                "orate" :{
+                    "value" :0,
+                    "isChecked": false
+                },
+                "play" :{
+                    "value" :0,
+                    "isChecked": false,
+                    "subject": ""
+                },
+                "read" :{
+                    "value" :0,
+                    "isChecked": false,
+                    "subject": ""
+                },
+                "recognize" :{
+                    "value" :0,
+                    "isChecked": false
+                },
+                "religion" :{
+                    "value" :0,
+                    "isChecked": false
+                },
+                "romance" :{
+                    "value" :0,
+                    "isChecked": false
+                },
+                "singing" :{
+                    "value" :0,
+                    "isChecked": false
+                },
+                "stewardship" :{
+                    "value" :0,
+                    "isChecked": false
+                },  
+                "swimming" :{
+                    "value" :0,
+                    "isChecked": false
+                },
+                "tourney" :{
+                    "value" :0,
+                    "isChecked": false
+                }
             }
         },
-        "knight":{
-            "templates":["actorBase"]
+        "Knight":{
+            "templates":["actorBase","skillBase"]
         }
     },
     "Item":{
         "types":[
-            "squire"
+            "Squire", 
+            "Skill",
+            "speciltySkill"
         ],
         "templates":{
             "mortalBase": {
                 "bio": "",
                 "name": "",
                 "age": 0
+            },
+            "skillBase": {
+                "name": "",
+                "value": 0,
+                "isChecked": false
             }
         },
         "squire":{
             "templates":["mortalBase"],
-            "firstaid": 0,
-            "firstaidChecked": false,
+            "firstAid": 0,
+            "firstAidChecked": false,
             "battle": 0,
             "battleChecked": false,
             "horsemanship": 0,
             "horsemanshipChecked": false
+        },
+        "skill": {
+            "templates":["skillBase"]
+        },
+        "speciltySkill": {
+            "templates":["skillBase"],
+            "subject": ""
         }
     }
 }

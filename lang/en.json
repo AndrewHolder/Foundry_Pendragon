@@ -2,12 +2,41 @@
     "pendragon" : {
         "skill": {
             "none": "",
-            "firstaid": "First Aid",
+            "newSkill": "New Skill",
+            "awareness": "Awareness",
+            "boating": "Boating",
+            "compose": "Compose",
+            "courtesy": "Courtesy",
+            "dancing": "Dancing",
+            "faerieLore": "Faerie Lore",
+            "firstAid": "First Aid",
+            "flirting": "Flirting",
+            "folklore": "Folklore",
+            "gaming": "Gaming",
+            "heraldry": "Heraldry",
+            "hunting": "Hunting",
+            "intrigue": "Intrigue",
+            "orate": "Orate",
+            "play": "Play",
+            "read": "Read",
+            "recognize": "Recognize",
+            "religion": "Religion",
+            "romance": "Romance",
+            "singing": "Singing",
+            "stewardship": "Stewardship",
+            "swimming": "Swimming",
+            "tourney": "Tourney",
             "battle": "Battle",
             "horsemanship": "Horsemanship"
         },
         "mortal": {
-            "age": "Age"
+            "age": "Age",
+            "homeland": "Homeland",
+            "culture": "Culture",
+            "religion": "Religion",
+            "lord": "Lord",
+            "currentClass": "Current Class",
+            "currentHome": "Current Home"
         },
         "labels": {
             "description": "Description",
