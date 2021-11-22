@@ -73,10 +73,42 @@
             </tr>
             <tr>
                 <td>
+                    {{localize "pendragon.labels.damage"}}
+                </td>
+                <td>
+                    {{numberFormat data.damage decimals=0 sign=false}} d6
+                </td>
+            </tr>
+            <tr>
+                <td>
                     {{localize "pendragon.labels.healingRate"}}
                 </td>
                 <td>
-                    {{numberFormat data.healingrate decimals=0 sign=false}}
+                    {{numberFormat data.healingRate decimals=0 sign=false}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    {{localize "pendragon.labels.movementRate"}}
+                </td>
+                <td>
+                    {{numberFormat data.movementRate decimals=0 sign=false}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    {{localize "pendragon.labels.totalHP"}}
+                </td>
+                <td>
+                    {{numberFormat data.totalHP decimals=0 sign=false}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    {{localize "pendragon.labels.unconcious"}}
+                </td>
+                <td>
+                    {{numberFormat data.uncon decimals=0 sign=false}}
                 </td>
             </tr>
         </table>

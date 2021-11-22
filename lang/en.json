@@ -93,7 +93,8 @@
             "healingRate": "Healing Rate",
             "movementRate": "Movement Rate",
             "totalHP": "Total Hit Points",
-            "unconcious": "Unconcious"
+            "unconcious": "Unconcious",
+            "damage": "Damage"
         }
     }
 }
