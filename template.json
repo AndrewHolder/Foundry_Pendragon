@@ -2,7 +2,7 @@
     "Actor":{
         "types":[
             "Knight",
-            "Woman knight",
+            "Female Knight",
             "NPC"
         ],
         "templates:": {
@@ -14,7 +14,8 @@
                 "religion": "",
                 "lord": "",
                 "currentClass": "",
-                "currentHome": ""
+                "currentHome": "",
+                "childNumber": 1
             },
             "skillBase": {
                 "awareness" :{
@@ -111,17 +112,178 @@
                     "value" :0,
                     "isChecked": false
                 }
+            },
+            "traitBase": {
+                "chaste": {
+                    "value": 0,
+                    "isChecked": false
+                },
+                "lustful":{
+                    "value": 0,
+                    "isChecked": false
+                },
+                "energenic": {
+                    "value": 0,
+                    "isChecked": false
+                },
+                "lasy": {
+                    "value": 0,
+                    "isChecked": false
+                },
+                "forgiving": {
+                    "value": 0,
+                    "isChecked": false
+                },
+                "vengeful": {
+                    "value": 0,
+                    "isChecked": false
+                },
+                "generous": {
+                    "value": 0,
+                    "isChecked": false
+                },
+                "selfish": {
+                    "value": 0,
+                    "isChecked": false
+                },
+                "honest": {
+                    "value": 0,
+                    "isChecked": false
+                },
+                "deceitful": {
+                    "value": 0,
+                    "isChecked": false
+                },
+                "just": {
+                    "value": 0,
+                    "isChecked": false
+                },
+                "arbritrary": {
+                    "value": 0,
+                    "isChecked": false
+                },
+                "merciful": {
+                    "value": 0,
+                    "isChecked": false
+                },
+                "cruel": {
+                    "value": 0,
+                    "isChecked": false
+                },
+                "modest": {
+                    "value": 0,
+                    "isChecked": false
+                },
+                "proud": {
+                    "value": 0,
+                    "isChecked": false
+                },
+                "prudent": {
+                    "value": 0,
+                    "isChecked": false
+                },
+                "reckless": {
+                    "value": 0,
+                    "isChecked": false
+                },
+                "spiritual": {
+                    "value": 0,
+                    "isChecked": false
+                },
+                "wordly": {
+                    "value": 0,
+                    "isChecked": false
+                },
+                "temperate": {
+                    "value": 0,
+                    "isChecked": false
+                },
+                "indulgent": {
+                    "value": 0,
+                    "isChecked": false
+                },
+                "trusting": {
+                    "value": 0,
+                    "isChecked": false
+                },
+                "suspicious": {
+                    "value": 0,
+                    "isChecked": false
+                },
+                "valorous": {
+                    "value": 0,
+                    "isChecked": false
+                },
+                "cowardly": {
+                    "value": 0,
+                    "isChecked": false
+                }        
+            },
+            "passionBase": {
+                "loyaltyLord": {
+                    "value": 0,
+                    "isChecked": false
+                },
+                "loyaltyFam": {
+                    "value": 0,
+                    "isChecked": false
+                },
+                "hospitality": {
+                    "value": 0,
+                    "isChecked": false
+                },
+                "honor": {
+                    "value": 0,
+                    "isChecked": false
+                }
+            },
+            "attributeBase": {
+                "SIZ": 0,
+                "DEX": 0,
+                "STR": 0,
+                "CON": 0,
+                "APP": 0
+            },
+            "combatBase": {
+                "battle": {
+                    "value": 0,
+                    "isChecked": false
+                },
+                "horsemanship": {
+                    "value": 0,
+                    "isChecked": false
+                },
+                "sword": {
+                    "value": 0,
+                    "isChecked": false
+                },
+                "lance": {
+                    "value": 0,
+                    "isChecked": false
+                },
+                "spear": {
+                    "value": 0,
+                    "isChecked": false
+                },
+                "dagger": {
+                    "value": 0,
+                    "isChecked": false
+                }
             }
+
         },
         "Knight":{
-            "templates":["actorBase","skillBase"]
+            "templates":["actorBase","skillBase","traitBase","passionBase","attributeBase","combatBase"]
         }
     },
     "Item":{
         "types":[
             "Squire", 
             "Skill",
-            "speciltySkill"
+            "speciltySkill",
+            "directedTrait",
+            "speciltyPassion",
+            "combatSkill"
         ],
         "templates":{
             "mortalBase": {
@@ -150,6 +312,16 @@
         "speciltySkill": {
             "templates":["skillBase"],
             "subject": ""
+        },
+        "directedTriat": {
+            "templates": ["skillBase"]
+        },
+        "speciltyPassion": {
+            "templates": ["skillBase"],
+            "subject": ""
+        },
+        "combatSkill": {
+            "templates": ["skillBase"]
         }
     }
 }

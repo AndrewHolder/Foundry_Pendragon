@@ -4,18 +4,22 @@
             "none": "",
             "newSkill": "New Skill",
             "awareness": "Awareness",
+            "battle": "Battle",
             "boating": "Boating",
             "compose": "Compose",
             "courtesy": "Courtesy",
             "dancing": "Dancing",
+            "dagger": "Dagger",
             "faerieLore": "Faerie Lore",
             "firstAid": "First Aid",
             "flirting": "Flirting",
             "folklore": "Folklore",
             "gaming": "Gaming",
             "heraldry": "Heraldry",
+            "horsemanship": "Horsemanship",
             "hunting": "Hunting",
             "intrigue": "Intrigue",
+            "lance": "Lance",
             "orate": "Orate",
             "play": "Play",
             "read": "Read",
@@ -23,11 +27,45 @@
             "religion": "Religion",
             "romance": "Romance",
             "singing": "Singing",
+            "spear": "Spear",
             "stewardship": "Stewardship",
             "swimming": "Swimming",
-            "tourney": "Tourney",
-            "battle": "Battle",
-            "horsemanship": "Horsemanship"
+            "sword": "Sword",
+            "tourney": "Tourney"
+        },
+        "traits": {
+            "chaste": "Chaste",
+            "lustful": "Lustful",
+            "energenic": "Energenic",
+            "lazy": "Lazy",
+            "forgiving": "Forgiving",
+            "vengeful": "Vengeful",
+            "generous": "Generous",
+            "selfish": "Selfish",
+            "honest": "Honest",
+            "deceitful": "Deceitful",
+            "just": "Just",
+            "arbritrary": "Arbitrary",
+            "merciful": "Merciful",
+            "cruel": "Cruel",
+            "modest": "Modest",
+            "Proud": "Proud",
+            "prudent": "Prudent",
+            "reckless": "Reckless",
+            "spiritual": "Spiritual",
+            "wordly": "Wordly",
+            "temperate": "Temperate",
+            "indulgent": "Indulgent",
+            "trusting": "Trusting",
+            "suspicious": "Suspicious",
+            "valorous": "Valorous",
+            "cowardly": "Cowardly"
+        },
+        "passions": {
+            "loyaltyLord": "Loyalty (Lord)",
+            "loyaltyFam": "Loyalty (Family)",
+            "hospitality": "Hospitality",
+            "honor": "Honor"
         },
         "mortal": {
             "age": "Age",
@@ -36,11 +74,26 @@
             "religion": "Religion",
             "lord": "Lord",
             "currentClass": "Current Class",
-            "currentHome": "Current Home"
+            "currentHome": "Current Home",
+            "sonNumber": "Son Number",
+            "daughterNumber": "Daughter Number"
+        },
+        "attributes": {
+            "siz": "SIZ",
+            "dex": "DEX",
+            "str": "STR",
+            "con": "CON",
+            "app": "APP"
         },
         "labels": {
             "description": "Description",
-            "bio": "Bio"
+            "bio": "Bio",
+            "knockdown": "Knockdown",
+            "majorWound": "Major Wound",
+            "healingRate": "Healing Rate",
+            "movementRate": "Movement Rate",
+            "totalHP": "Total Hit Points",
+            "unconcious": "Unconcious"
         }
     }
 }

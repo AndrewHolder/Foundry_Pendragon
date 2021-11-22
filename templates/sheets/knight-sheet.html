@@ -1,0 +1,104 @@
+<form class="actor-sheet {{cssClass}}" autocomplete="off">
+    <header class="sheet-header">
+        <img src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="64" width="64"/>
+        <h1 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder="{{ localize 'Name' }}"/></h1>
+    </header>
+    <br>HELLO ACTOR
+    <section class="personalData">
+        <h3>Personal Data</h3>
+        <div>
+            <br>
+            {{localize "pendragon.mortal.age"}} : <input name="data.actorBase.age" type="text" value="{{data.actorBase.age}}" data-dtype="Number" />
+            <br>
+            {{localize "pendragon.mortal.sonNumber"}} : <input name="data.actorBase.childNumber" type="text" value="{{data.actorBase.childNumber}}" data-dtype="Number" />
+            <br>
+            {{localize "pendragon.mortal.homeland"}} : <input name="data.actorBase.homeland" type="text" value="{{data.actorBase.homeland}}" data-dtype="String" />
+            <br>
+            {{localize "pendragon.mortal.culture"}} : <input name="data.actorBase.culture" type="text" value="{{data.actorBase.culture}}" data-dtype="String" />
+            <br>
+            {{localize "pendragon.mortal.religion"}} : <input name="data.actorBase.religion" type="text" value="{{data.actorBase.religion}}" data-dtype="String" />
+            <br>
+            {{localize "pendragon.mortal.lord"}} : <input name="data.actorBase.lord" type="text" value="{{data.actorBase.lord}}" data-dtype="String" />
+            <br>
+            {{localize "pendragon.mortal.currentClass"}} : <input name="data.actorBase.currentClass" type="text" value="{{data.actorBase.currentClass}}" data-dtype="String" />
+            <br>
+            {{localize "pendragon.mortal.currentHome"}} : <input name="data.actorBase.currentHome" type="text" value="{{data.actorBase.currentHome}}" data-dtype="String" />
+        </div>
+    </section>
+    <br>
+    <section class="attributes">
+    <h3>Attributes</h3>
+        <table>
+            <tr>
+                <td>
+                    {{localize "pendragon.attributes.siz"}}
+                </td>
+                <td>
+                    <input name="data.attributeBase.SIZ" type="text" value="{{data.attributeBase.SIZ}}" data-dtype="Number" />
+                    ({{localize "pendragon.labels.knockdown"}})
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    {{localize "pendragon.attributes.dex"}}
+                </td>
+                <td>
+                    <input name="data.attributeBase.DEX" type="text" value="{{data.attributeBase.DEX}}" data-dtype="Number" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    {{localize "pendragon.attributes.str"}}
+                </td>
+                <td>
+                    <input name="data.attributeBase.STR" type="text" value="{{data.attributeBase.STR}}" data-dtype="Number" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    {{localize "pendragon.attributes.con"}}
+                </td>
+                <td>
+                    <input name="data.attributeBase.CON" type="text" value="{{data.attributeBase.CON}}" data-dtype="Number" />
+                    ({{localize "pendragon.labels.majorWound"}})
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    {{localize "pendragon.attributes.app"}}
+                </td>
+                <td>
+                    <input name="data.attributeBase.APP" type="text" value="{{data.attributeBase.APP}}" data-dtype="Number" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    {{localize "pendragon.labels.healingRate"}}
+                </td>
+                <td>
+                    {{numberFormat data.healingrate decimals=0 sign=false}}
+                </td>
+            </tr>
+        </table>
+    </section>
+    <br>
+    <section class="items">
+        <h3>Owned Items</h3>
+        <ol class="actor-items">
+        {{#each actor.items as |item id|}}
+            <li class="actor-item" data-item-id="{{id}}">
+                <div class="item-name">
+                  <img src="{{item.img}}" title="{{item.name}}" width="24" height="24"/>
+                    <h4>{{item.name}}</h4>
+                    <h4>{{item.age}}</h4>
+                </div>
+                <div class="item-controls">
+                    <a class="item-control item-edit" title="Edit Item"><i class="fas fa-edit"></i></a>
+                    <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
+                </div>
+            </li>
+        {{/each}}
+        </ol>
+    </section>
+</form>
+
