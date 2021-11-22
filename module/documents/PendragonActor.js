@@ -40,7 +40,7 @@ export default class PendragonActor extends Actor {
 
     _prepareKnightData(actorData) {
 
-        if (actorData.type !== 'Knight') return;
+        if (actorData.type !== 'Knight' && actorData.type !== 'Female Knight') return;
 
         actorData.data.damage = Math.floor((actorData.data.attributeBase.SIZ + actorData.data.attributeBase.STR) / 6);
 

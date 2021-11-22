@@ -94,7 +94,9 @@
             "movementRate": "Movement Rate",
             "totalHP": "Total Hit Points",
             "unconcious": "Unconcious",
-            "damage": "Damage"
+            "damage": "Damage",
+            "chivBonus": "Chivalry Bonus",
+            "regBonus": "Religious Bonus"
         }
     }
 }

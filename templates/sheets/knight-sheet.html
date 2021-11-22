@@ -114,6 +114,38 @@
         </table>
     </section>
     <br>
+    <section class="personalityTraits">
+    <h3>Personality Traits</h3>
+    {{localize "pendragon.labels.chivBonus"}}[*]
+    <br>
+    {{localize "pendragon.labels.regBonus"}}
+    <table>
+        <tr>
+            <td>
+                <input name ="data.traitBase.chaste.isChecked" type="checkbox" {{checked data.traitBase.chaste.isChecked}} />
+            </td>
+            <td>
+                {{localize "pendragon.traits.chaste"}}
+            </td>
+            <td>
+                <input name="data.traitBase.chaste.value" type="text" value="{{data.traitBase.chaste.value}}" data-dtype="Number" />
+            </td>
+            <td>
+                /
+            </td>
+            <td>
+                <input name="data.traitBase.lustful.value" type="text" value="{{data.traitBase.lustful.value}}" data-dtype="Number" />
+            </td>
+            <td>
+                {{localize "pendragon.traits.lustful"}}
+            </td>
+            <td>
+                <input name ="data.traitBase.lustful.isChecked" type="checkbox" {{checked data.traitBase.lustful.isChecked}} />
+            </td>
+        </tr>
+    </table>
+    </section>
+    <br>
     <section class="items">
         <h3>Owned Items</h3>
         <ol class="actor-items">
